@@ -161,9 +161,34 @@
                 max-width: 300px;
             }
         }
+
+        .topbar {
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+        .container {
+            margin-top: 150px;
+        }
+
+        @media (max-width: 600px) {
+            .topbar {
+                font-size: 1.2em;
+            }
+        }
     </style>
 </head>
 <body>
+    <div class="topbar">
+        <h1>Spin Wheel</h1>
+    </div>
     <div class="container">
         <div class="wheel-container">
             <div class="wheel" id="wheel">
